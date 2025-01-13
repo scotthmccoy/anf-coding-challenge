@@ -5,6 +5,8 @@
 //  Created by Scott McCoy on 1/13/25.
 //
 
+import Foundation
+
 func AppLog(
     _ message: String = "",
     file: StaticString = #file,
