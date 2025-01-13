@@ -25,6 +25,7 @@
 		5747A6D72D35C38600CE57B8 /* ExploreCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5747A6D62D35C38600CE57B8 /* ExploreCardViewModel.swift */; };
 		5747A6D92D35C46000CE57B8 /* ExploreCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5747A6D82D35C46000CE57B8 /* ExploreCardCell.swift */; };
 		5747A6DD2D35C94A00CE57B8 /* CachedAsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5747A6DC2D35C94A00CE57B8 /* CachedAsyncImage.swift */; };
+		5747A6DF2D35CECA00CE57B8 /* ProductContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5747A6DE2D35CECA00CE57B8 /* ProductContentCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		5747A6D62D35C38600CE57B8 /* ExploreCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreCardViewModel.swift; sourceTree = "<group>"; };
 		5747A6D82D35C46000CE57B8 /* ExploreCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreCardCell.swift; sourceTree = "<group>"; };
 		5747A6DC2D35C94A00CE57B8 /* CachedAsyncImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachedAsyncImage.swift; sourceTree = "<group>"; };
+		5747A6DE2D35CECA00CE57B8 /* ProductContentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductContentCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +155,7 @@
 				5747A6BD2D359E9E00CE57B8 /* App.swift */,
 				5747A6BE2D359E9E00CE57B8 /* ExploreCardView.swift */,
 				5747A6D82D35C46000CE57B8 /* ExploreCardCell.swift */,
+				5747A6DE2D35CECA00CE57B8 /* ProductContentCell.swift */,
 				5747A6DC2D35C94A00CE57B8 /* CachedAsyncImage.swift */,
 			);
 			path = View;
@@ -337,6 +340,7 @@
 				5747A6C32D35A13500CE57B8 /* DataStructs.swift in Sources */,
 				5747A6CC2D35B9EF00CE57B8 /* Result.swift in Sources */,
 				5747A6DD2D35C94A00CE57B8 /* CachedAsyncImage.swift in Sources */,
+				5747A6DF2D35CECA00CE57B8 /* ProductContentCell.swift in Sources */,
 				5747A6C02D359E9E00CE57B8 /* App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
