@@ -12,10 +12,8 @@ import Scootys_Unit_Testing
 
 @testable import ANF_Code_Test
 
-class DataStructsTestsTests: XCTestCase {
+class DataObjectsTests: XCTestCase {
     func test() {
-        
-        
         
         guard let jsonUrl = Bundle(for: Self.self)
         .url(forResource: "exploreData.json", withExtension: nil) else {
@@ -44,12 +42,12 @@ class DataStructsTestsTests: XCTestCase {
                 title: "TOPS STARTING AT $12",
                 backgroundImage: "anf-20160527-app-m-shirts.jpg",
                 content: [
-                    ContentDataObject(
+                    ProductContentDataObject(
                         target: "https://www.abercrombie.com/shop/us/mens-new-arrivals",
                         title: "Shop Men",
                         elementType: nil
                     ),
-                    ContentDataObject(
+                    ProductContentDataObject(
                         target: "https://www.abercrombie.com/shop/us/womens-new-arrivals",
                         title: "Shop Women",
                         elementType: nil
@@ -66,7 +64,7 @@ class DataStructsTestsTests: XCTestCase {
                 title: "T-SHIRT DRESSES",
                 backgroundImage: "anf-US-20160601-app-women-dresses.jpg",
                 content: [
-                    ContentDataObject(
+                    ProductContentDataObject(
                         target: "https://www.abercrombie.com/shop/us/womens-dresses-and-rompers",
                         title: "SHOP NOW",
                         elementType: "hyperlink"
@@ -80,7 +78,7 @@ class DataStructsTestsTests: XCTestCase {
                 title: "Spotlight On New",
                 backgroundImage: "anf-US-20160601-app-men-spotlight.jpg",
                 content: [
-                    ContentDataObject(
+                    ProductContentDataObject(
                         target: "https://www.abercrombie.com/shop/us/mens-new-arrivals",
                         title: "SHOP NOW",
                         elementType: "hyperlink"
@@ -102,7 +100,7 @@ class DataStructsTestsTests: XCTestCase {
                 title: "A&F ESSENTIALS",
                 backgroundImage: "anf-US-20160415-app-men-essentials.jpg",
                 content: [
-                    ContentDataObject(
+                    ProductContentDataObject(
                         target: "https://www.abercrombie.com/shop/us/mens-a-and-f-essentials",
                         title: "SHOP NOW",
                         elementType: nil
@@ -124,7 +122,7 @@ class DataStructsTestsTests: XCTestCase {
                 title: "ALL SHORTS $29",
                 backgroundImage: "anf-US-20160505-app-w-shorts.jpg",
                 content: [
-                    ContentDataObject(
+                    ProductContentDataObject(
                         target: "https://www.abercrombie.com/shop/us/womens-shorts-bottoms",
                         title: "SHOP NOW",
                         elementType: nil
@@ -138,7 +136,7 @@ class DataStructsTestsTests: XCTestCase {
                 title: "ALL SHORTS $29",
                 backgroundImage: "anf-US-20160519-app-m-shorts.jpg",
                 content: [
-                    ContentDataObject(
+                    ProductContentDataObject(
                         target: "https://www.abercrombie.com/shop/us/mens-shorts-bottoms",
                         title: "SHOP NOW",
                         elementType: nil
@@ -152,7 +150,7 @@ class DataStructsTestsTests: XCTestCase {
                 title: "TEES & HENLEYS",
                 backgroundImage: "anf-US-20160518-app-men-tees.jpg",
                 content: [
-                    ContentDataObject(
+                    ProductContentDataObject(
                         target: "https://www.abercrombie.com/shop/us/mens-tees-and-henleys-tops",
                         title: "SHOP NOW",
                         elementType: nil
@@ -166,7 +164,7 @@ class DataStructsTestsTests: XCTestCase {
                 title: "ALL JEANS BUY ONE GET ONE 50% OFF",
                 backgroundImage: "anf-US-20160415-app-women-jeans.jpg",
                 content: [
-                    ContentDataObject(
+                    ProductContentDataObject(
                         target: "https://www.abercrombie.com/shop/us/womens-jeans-bottoms",
                         title: "SHOP NOW",
                         elementType: nil

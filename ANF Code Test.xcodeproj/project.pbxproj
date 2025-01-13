@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -19,9 +19,11 @@
 		5747A6C02D359E9E00CE57B8 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5747A6BD2D359E9E00CE57B8 /* App.swift */; };
 		5747A6C32D35A13500CE57B8 /* DataStructs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5747A6C22D35A13500CE57B8 /* DataStructs.swift */; };
 		5747A6C72D35A1BF00CE57B8 /* CodableHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5747A6C62D35A1BF00CE57B8 /* CodableHelper.swift */; };
-		5747A6C92D35B86200CE57B8 /* DataStructsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5747A6C82D35B86200CE57B8 /* DataStructsTests.swift */; };
+		5747A6C92D35B86200CE57B8 /* DataObjectsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5747A6C82D35B86200CE57B8 /* DataObjectsTests.swift */; };
 		5747A6CA2D35B87900CE57B8 /* exploreData.json in Resources */ = {isa = PBXBuildFile; fileRef = 3E4AB9392676D86100C79456 /* exploreData.json */; };
 		5747A6CC2D35B9EF00CE57B8 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5747A6CB2D35B9EF00CE57B8 /* Result.swift */; };
+		5747A6D12D35C01200CE57B8 /* DomainStructs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5747A6D02D35C01200CE57B8 /* DomainStructs.swift */; };
+		5747A6D32D35C26000CE57B8 /* DomainObjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5747A6D22D35C26000CE57B8 /* DomainObjectTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,8 +55,10 @@
 		5747A6BE2D359E9E00CE57B8 /* ExploreCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreCardView.swift; sourceTree = "<group>"; };
 		5747A6C22D35A13500CE57B8 /* DataStructs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStructs.swift; sourceTree = "<group>"; };
 		5747A6C62D35A1BF00CE57B8 /* CodableHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableHelper.swift; sourceTree = "<group>"; };
-		5747A6C82D35B86200CE57B8 /* DataStructsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStructsTests.swift; sourceTree = "<group>"; };
+		5747A6C82D35B86200CE57B8 /* DataObjectsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataObjectsTests.swift; sourceTree = "<group>"; };
 		5747A6CB2D35B9EF00CE57B8 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		5747A6D02D35C01200CE57B8 /* DomainStructs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainStructs.swift; sourceTree = "<group>"; };
+		5747A6D22D35C26000CE57B8 /* DomainObjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainObjectTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,7 +121,8 @@
 			isa = PBXGroup;
 			children = (
 				3E727EE92672708B006C11AC /* ANFExploreCardTableViewControllerTests.swift */,
-				5747A6C82D35B86200CE57B8 /* DataStructsTests.swift */,
+				5747A6C82D35B86200CE57B8 /* DataObjectsTests.swift */,
+				5747A6D22D35C26000CE57B8 /* DomainObjectTests.swift */,
 				3E727EEB2672708B006C11AC /* Info.plist */,
 			);
 			path = "ANF Code TestTests";
@@ -127,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				5747A6C22D35A13500CE57B8 /* DataStructs.swift */,
+				5747A6D02D35C01200CE57B8 /* DomainStructs.swift */,
 				5747A6C62D35A1BF00CE57B8 /* CodableHelper.swift */,
 			);
 			path = Model;
@@ -147,7 +153,6 @@
 				3D3F481AC9259143B362EA4B /* Pods-ANF Code TestTests.debug.xcconfig */,
 				3DF6054DE12B4A861B3ACACA /* Pods-ANF Code TestTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -307,6 +312,7 @@
 				3E727F03267281F7006C11AC /* ANFExploreCardTableViewController.swift in Sources */,
 				5747A6BC2D3591C800CE57B8 /* ExploreCardCell.swift in Sources */,
 				5747A6B02D358EAA00CE57B8 /* AppLog.swift in Sources */,
+				5747A6D12D35C01200CE57B8 /* DomainStructs.swift in Sources */,
 				5747A6C72D35A1BF00CE57B8 /* CodableHelper.swift in Sources */,
 				5747A6BF2D359E9E00CE57B8 /* ExploreCardView.swift in Sources */,
 				5747A6C32D35A13500CE57B8 /* DataStructs.swift in Sources */,
@@ -319,8 +325,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5747A6C92D35B86200CE57B8 /* DataStructsTests.swift in Sources */,
+				5747A6C92D35B86200CE57B8 /* DataObjectsTests.swift in Sources */,
 				3E727EEA2672708B006C11AC /* ANFExploreCardTableViewControllerTests.swift in Sources */,
+				5747A6D32D35C26000CE57B8 /* DomainObjectTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
