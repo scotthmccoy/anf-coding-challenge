@@ -16,6 +16,11 @@
 		5747A6BC2D3591C800CE57B8 /* ExploreCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5747A6B92D3591C800CE57B8 /* ExploreCardCell.swift */; };
 		5747A6BF2D359E9E00CE57B8 /* ExploreCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5747A6BE2D359E9E00CE57B8 /* ExploreCardView.swift */; };
 		5747A6C02D359E9E00CE57B8 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5747A6BD2D359E9E00CE57B8 /* App.swift */; };
+		5747A6C32D35A13500CE57B8 /* DataStructs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5747A6C22D35A13500CE57B8 /* DataStructs.swift */; };
+		5747A6C72D35A1BF00CE57B8 /* CodableHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5747A6C62D35A1BF00CE57B8 /* CodableHelper.swift */; };
+		5747A6C92D35B86200CE57B8 /* DataStructsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5747A6C82D35B86200CE57B8 /* DataStructsTests.swift */; };
+		5747A6CA2D35B87900CE57B8 /* exploreData.json in Resources */ = {isa = PBXBuildFile; fileRef = 3E4AB9392676D86100C79456 /* exploreData.json */; };
+		5747A6CC2D35B9EF00CE57B8 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5747A6CB2D35B9EF00CE57B8 /* Result.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +47,10 @@
 		5747A6B92D3591C800CE57B8 /* ExploreCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreCardCell.swift; sourceTree = "<group>"; };
 		5747A6BD2D359E9E00CE57B8 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		5747A6BE2D359E9E00CE57B8 /* ExploreCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreCardView.swift; sourceTree = "<group>"; };
+		5747A6C22D35A13500CE57B8 /* DataStructs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStructs.swift; sourceTree = "<group>"; };
+		5747A6C62D35A1BF00CE57B8 /* CodableHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableHelper.swift; sourceTree = "<group>"; };
+		5747A6C82D35B86200CE57B8 /* DataStructsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStructsTests.swift; sourceTree = "<group>"; };
+		5747A6CB2D35B9EF00CE57B8 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +96,8 @@
 				5747A6BE2D359E9E00CE57B8 /* ExploreCardView.swift */,
 				3E727F02267281F7006C11AC /* ANFExploreCardTableViewController.swift */,
 				5747A6B92D3591C800CE57B8 /* ExploreCardCell.swift */,
-				5747A6AF2D358EA800CE57B8 /* AppLog.swift */,
+				5747A6CD2D35B9F800CE57B8 /* Utility */,
+				5747A6C12D35A12400CE57B8 /* Model */,
 				3E727EDB2672708B006C11AC /* Assets.xcassets */,
 				3E727EDD2672708B006C11AC /* LaunchScreen.storyboard */,
 				3E727EE02672708B006C11AC /* Info.plist */,
@@ -100,9 +110,28 @@
 			isa = PBXGroup;
 			children = (
 				3E727EE92672708B006C11AC /* ANFExploreCardTableViewControllerTests.swift */,
+				5747A6C82D35B86200CE57B8 /* DataStructsTests.swift */,
 				3E727EEB2672708B006C11AC /* Info.plist */,
 			);
 			path = "ANF Code TestTests";
+			sourceTree = "<group>";
+		};
+		5747A6C12D35A12400CE57B8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5747A6C22D35A13500CE57B8 /* DataStructs.swift */,
+				5747A6C62D35A1BF00CE57B8 /* CodableHelper.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5747A6CD2D35B9F800CE57B8 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				5747A6AF2D358EA800CE57B8 /* AppLog.swift */,
+				5747A6CB2D35B9EF00CE57B8 /* Result.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,6 +224,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5747A6CA2D35B87900CE57B8 /* exploreData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,7 +238,10 @@
 				3E727F03267281F7006C11AC /* ANFExploreCardTableViewController.swift in Sources */,
 				5747A6BC2D3591C800CE57B8 /* ExploreCardCell.swift in Sources */,
 				5747A6B02D358EAA00CE57B8 /* AppLog.swift in Sources */,
+				5747A6C72D35A1BF00CE57B8 /* CodableHelper.swift in Sources */,
 				5747A6BF2D359E9E00CE57B8 /* ExploreCardView.swift in Sources */,
+				5747A6C32D35A13500CE57B8 /* DataStructs.swift in Sources */,
+				5747A6CC2D35B9EF00CE57B8 /* Result.swift in Sources */,
 				5747A6C02D359E9E00CE57B8 /* App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -217,6 +250,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5747A6C92D35B86200CE57B8 /* DataStructsTests.swift in Sources */,
 				3E727EEA2672708B006C11AC /* ANFExploreCardTableViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -370,7 +404,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C25K9LS5G2;
 				INFOPLIST_FILE = "ANF Code Test/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 16;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -392,7 +426,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C25K9LS5G2;
 				INFOPLIST_FILE = "ANF Code Test/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 16;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -414,7 +448,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C25K9LS5G2;
 				INFOPLIST_FILE = "ANF Code TestTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -437,7 +471,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C25K9LS5G2;
 				INFOPLIST_FILE = "ANF Code TestTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
