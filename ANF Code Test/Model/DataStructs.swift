@@ -22,13 +22,15 @@ struct ProductDataObject {
     
     var product: Product? {
         
-        guard let title, let backgroundImage else {
+        guard let title,
+        let backgroundImage,
+        let backgroundImageUrl = URL(string: backgroundImage) else {
             return nil
         }
         
         return Product(
             title: title,
-            backgroundImage: backgroundImage,
+            backgroundImageUrl: backgroundImageUrl,
             content: content?.compactMap { $0.productContent } ?? [],
             promoMessage: promoMessage ?? "",
             topDescription: topDescription ?? "",

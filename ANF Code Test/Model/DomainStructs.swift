@@ -9,7 +9,7 @@ import Foundation
 
 struct Product {
     let title: String
-    let backgroundImage: String
+    let backgroundImageUrl: URL
     let content: [ProductContent]
     let promoMessage: String
     let topDescription: String

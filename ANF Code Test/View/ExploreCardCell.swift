@@ -14,7 +14,7 @@ struct ExploreCardCell: View {
     var body: some View {
         VStack {
             Text(product.title)
-            Image(product.backgroundImage)
+            CachedAsyncImage(url: product.backgroundImageUrl)
         }
     }
 }
@@ -22,7 +22,7 @@ struct ExploreCardCell: View {
 #Preview {
     ExploreCardCell(product: Product(
             title: "Title",
-            backgroundImage: "anf-US-20160415-app-women-jeans",
+            backgroundImageUrl: URL(string:  "https://img.abercrombie.com/is/image/anf/KIC_155-4713-00030-278_model6.jpg?policy=product-medium")!,
             content: [],
             promoMessage: "Promo Message",
             topDescription: "Top Desc",
