@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		3E4AB93A2676D86100C79456 /* exploreData.json in Resources */ = {isa = PBXBuildFile; fileRef = 3E4AB9392676D86100C79456 /* exploreData.json */; };
 		3E727EDC2672708B006C11AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E727EDB2672708B006C11AC /* Assets.xcassets */; };
-		3E727EDF2672708B006C11AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E727EDD2672708B006C11AC /* LaunchScreen.storyboard */; };
 		3E727EEA2672708B006C11AC /* ANFExploreCardTableViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E727EE92672708B006C11AC /* ANFExploreCardTableViewControllerTests.swift */; };
 		4FCBD666ACA583F92387ABF9 /* libPods-ANF Code TestTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F5EA32B9143F68EEEDEEC40 /* libPods-ANF Code TestTests.a */; };
 		5747A6B02D358EAA00CE57B8 /* AppLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5747A6AF2D358EA800CE57B8 /* AppLog.swift */; };
@@ -26,6 +25,8 @@
 		5747A6D92D35C46000CE57B8 /* ExploreCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5747A6D82D35C46000CE57B8 /* ExploreCardCell.swift */; };
 		5747A6DD2D35C94A00CE57B8 /* CachedAsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5747A6DC2D35C94A00CE57B8 /* CachedAsyncImage.swift */; };
 		5747A6DF2D35CECA00CE57B8 /* ProductContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5747A6DE2D35CECA00CE57B8 /* ProductContentCell.swift */; };
+		5747A6E72D35D60900CE57B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5747A6E62D35D60900CE57B8 /* LaunchScreen.storyboard */; };
+		5747A6E82D35D60900CE57B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5747A6E62D35D60900CE57B8 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +45,6 @@
 		3E4AB9392676D86100C79456 /* exploreData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = exploreData.json; sourceTree = "<group>"; };
 		3E727ECF26727088006C11AC /* ANF Code Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ANF Code Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E727EDB2672708B006C11AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3E727EDE2672708B006C11AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3E727EE02672708B006C11AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3E727EE52672708B006C11AC /* ANF Code TestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ANF Code TestTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E727EE92672708B006C11AC /* ANFExploreCardTableViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ANFExploreCardTableViewControllerTests.swift; sourceTree = "<group>"; };
@@ -63,6 +63,7 @@
 		5747A6D82D35C46000CE57B8 /* ExploreCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreCardCell.swift; sourceTree = "<group>"; };
 		5747A6DC2D35C94A00CE57B8 /* CachedAsyncImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachedAsyncImage.swift; sourceTree = "<group>"; };
 		5747A6DE2D35CECA00CE57B8 /* ProductContentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductContentCell.swift; sourceTree = "<group>"; };
+		5747A6E62D35D60900CE57B8 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,10 +112,8 @@
 				5747A6D52D35C36A00CE57B8 /* ViewModel */,
 				5747A6C12D35A12400CE57B8 /* Model */,
 				5747A6CD2D35B9F800CE57B8 /* Utility */,
-				3E727EDB2672708B006C11AC /* Assets.xcassets */,
-				3E727EDD2672708B006C11AC /* LaunchScreen.storyboard */,
+				5747A6E92D35D60D00CE57B8 /* Assets */,
 				3E727EE02672708B006C11AC /* Info.plist */,
-				3E4AB9392676D86100C79456 /* exploreData.json */,
 			);
 			path = "ANF Code Test";
 			sourceTree = "<group>";
@@ -167,6 +166,16 @@
 				5747A6D62D35C38600CE57B8 /* ExploreCardViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5747A6E92D35D60D00CE57B8 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				3E727EDB2672708B006C11AC /* Assets.xcassets */,
+				5747A6E62D35D60900CE57B8 /* LaunchScreen.storyboard */,
+				3E4AB9392676D86100C79456 /* exploreData.json */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 		74E200561D1C42CBE27513FD /* Pods */ = {
@@ -268,7 +277,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E727EDF2672708B006C11AC /* LaunchScreen.storyboard in Resources */,
+				5747A6E72D35D60900CE57B8 /* LaunchScreen.storyboard in Resources */,
 				3E727EDC2672708B006C11AC /* Assets.xcassets in Resources */,
 				3E4AB93A2676D86100C79456 /* exploreData.json in Resources */,
 			);
@@ -279,6 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5747A6CA2D35B87900CE57B8 /* exploreData.json in Resources */,
+				5747A6E82D35D60900CE57B8 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,17 +374,6 @@
 			targetProxy = 3E727EE62672708B006C11AC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		3E727EDD2672708B006C11AC /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3E727EDE2672708B006C11AC /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		3E727EF72672708B006C11AC /* Debug */ = {
