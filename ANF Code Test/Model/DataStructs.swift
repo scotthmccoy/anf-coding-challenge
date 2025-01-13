@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ProductDataObject: Codable {
+struct ProductDataObject {
     let title: String?
     let backgroundImage: String?
     let content: [ContentDataObject]?
@@ -15,8 +15,9 @@ struct ProductDataObject: Codable {
     let topDescription: String?
     let bottomDescription: String?
 }
+extension ProductDataObject: Codable, Equatable {}
 
-struct ContentDataObject: Codable {
+struct ContentDataObject: Codable, Equatable {
     let target: String
     let title: String
     let elementType: String?

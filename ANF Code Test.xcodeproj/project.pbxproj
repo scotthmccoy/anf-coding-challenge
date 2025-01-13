@@ -12,6 +12,7 @@
 		3E727EDF2672708B006C11AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E727EDD2672708B006C11AC /* LaunchScreen.storyboard */; };
 		3E727EEA2672708B006C11AC /* ANFExploreCardTableViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E727EE92672708B006C11AC /* ANFExploreCardTableViewControllerTests.swift */; };
 		3E727F03267281F7006C11AC /* ANFExploreCardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E727F02267281F7006C11AC /* ANFExploreCardTableViewController.swift */; };
+		4FCBD666ACA583F92387ABF9 /* libPods-ANF Code TestTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F5EA32B9143F68EEEDEEC40 /* libPods-ANF Code TestTests.a */; };
 		5747A6B02D358EAA00CE57B8 /* AppLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5747A6AF2D358EA800CE57B8 /* AppLog.swift */; };
 		5747A6BC2D3591C800CE57B8 /* ExploreCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5747A6B92D3591C800CE57B8 /* ExploreCardCell.swift */; };
 		5747A6BF2D359E9E00CE57B8 /* ExploreCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5747A6BE2D359E9E00CE57B8 /* ExploreCardView.swift */; };
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3D3F481AC9259143B362EA4B /* Pods-ANF Code TestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ANF Code TestTests.debug.xcconfig"; path = "Target Support Files/Pods-ANF Code TestTests/Pods-ANF Code TestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3DF6054DE12B4A861B3ACACA /* Pods-ANF Code TestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ANF Code TestTests.release.xcconfig"; path = "Target Support Files/Pods-ANF Code TestTests/Pods-ANF Code TestTests.release.xcconfig"; sourceTree = "<group>"; };
 		3E4AB9392676D86100C79456 /* exploreData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = exploreData.json; sourceTree = "<group>"; };
 		3E727ECF26727088006C11AC /* ANF Code Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ANF Code Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E727EDB2672708B006C11AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -43,6 +46,7 @@
 		3E727EE92672708B006C11AC /* ANFExploreCardTableViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ANFExploreCardTableViewControllerTests.swift; sourceTree = "<group>"; };
 		3E727EEB2672708B006C11AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3E727F02267281F7006C11AC /* ANFExploreCardTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ANFExploreCardTableViewController.swift; sourceTree = "<group>"; };
+		3F5EA32B9143F68EEEDEEC40 /* libPods-ANF Code TestTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ANF Code TestTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5747A6AF2D358EA800CE57B8 /* AppLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLog.swift; sourceTree = "<group>"; };
 		5747A6B92D3591C800CE57B8 /* ExploreCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreCardCell.swift; sourceTree = "<group>"; };
 		5747A6BD2D359E9E00CE57B8 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
@@ -65,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FCBD666ACA583F92387ABF9 /* libPods-ANF Code TestTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +82,8 @@
 				3E727ED126727088006C11AC /* ANF Code Test */,
 				3E727EE82672708B006C11AC /* ANF Code TestTests */,
 				3E727ED026727088006C11AC /* Products */,
+				74E200561D1C42CBE27513FD /* Pods */,
+				AD9480839549F291F8136DA1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -134,6 +141,24 @@
 			path = Utility;
 			sourceTree = "<group>";
 		};
+		74E200561D1C42CBE27513FD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3D3F481AC9259143B362EA4B /* Pods-ANF Code TestTests.debug.xcconfig */,
+				3DF6054DE12B4A861B3ACACA /* Pods-ANF Code TestTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AD9480839549F291F8136DA1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3F5EA32B9143F68EEEDEEC40 /* libPods-ANF Code TestTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -158,9 +183,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3E727EFC2672708B006C11AC /* Build configuration list for PBXNativeTarget "ANF Code TestTests" */;
 			buildPhases = (
+				D14062BB5C2CC868BC3B65F9 /* [CP] Check Pods Manifest.lock */,
 				3E727EE12672708B006C11AC /* Sources */,
 				3E727EE22672708B006C11AC /* Frameworks */,
 				3E727EE32672708B006C11AC /* Resources */,
+				143AFDE86A9F6FD8E2F31E61 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -229,6 +256,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		143AFDE86A9F6FD8E2F31E61 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ANF Code TestTests/Pods-ANF Code TestTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ANF Code TestTests/Pods-ANF Code TestTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ANF Code TestTests/Pods-ANF Code TestTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D14062BB5C2CC868BC3B65F9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ANF Code TestTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3E727ECB26727088006C11AC /* Sources */ = {
@@ -441,6 +510,7 @@
 		};
 		3E727EFD2672708B006C11AC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D3F481AC9259143B362EA4B /* Pods-ANF Code TestTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -464,6 +534,7 @@
 		};
 		3E727EFE2672708B006C11AC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DF6054DE12B4A861B3ACACA /* Pods-ANF Code TestTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
