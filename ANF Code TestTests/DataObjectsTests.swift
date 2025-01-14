@@ -40,7 +40,7 @@ class DataObjectsTests: XCTestCase {
         let expected: [ProductDataObject] = [
             ProductDataObject(
                 title: "TOPS STARTING AT $12",
-                backgroundImage: "anf-20160527-app-m-shirts.jpg",
+                backgroundImage: "http://img.abercrombie.com/is/image/anf/ANF-2024-060624-M-HP-NewArrivals-USCA-Mens.jpg",
                 content: [
                     ProductContentDataObject(
                         target: "https://www.abercrombie.com/shop/us/mens-new-arrivals",
@@ -62,7 +62,7 @@ class DataObjectsTests: XCTestCase {
             ,
             ProductDataObject(
                 title: "T-SHIRT DRESSES",
-                backgroundImage: "anf-US-20160601-app-women-dresses.jpg",
+                backgroundImage: "http://img.abercrombie.com/is/image/anf/ANF-2024-053024-M-HP-YPB-USCA.jpg",
                 content: [
                     ProductContentDataObject(
                         target: "https://www.abercrombie.com/shop/us/womens-dresses-and-rompers",
@@ -76,7 +76,7 @@ class DataObjectsTests: XCTestCase {
             ),
             ProductDataObject(
                 title: "Spotlight On New",
-                backgroundImage: "anf-US-20160601-app-men-spotlight.jpg",
+                backgroundImage: "http://img.abercrombie.com/is/image/anf/ANF-2024-060624-M-HP-NewArrivals-USCA-Womens.jpg",
                 content: [
                     ProductContentDataObject(
                         target: "https://www.abercrombie.com/shop/us/mens-new-arrivals",
@@ -90,7 +90,7 @@ class DataObjectsTests: XCTestCase {
             ),
             ProductDataObject(
                 title: "Spotlight On New",
-                backgroundImage: "anf-US-20160601-app-women-spotlight.jpg",
+                backgroundImage: "http://img.abercrombie.com/is/image/anf/ANF-2024-MAYWK4-SUMMER-OUTFITTING-SITE-CAT-PAGE-DESKTOP-W.png",
                 content: nil,
                 promoMessage: nil,
                 topDescription: nil,
@@ -98,7 +98,7 @@ class DataObjectsTests: XCTestCase {
             ),
             ProductDataObject(
                 title: "A&F ESSENTIALS",
-                backgroundImage: "anf-US-20160415-app-men-essentials.jpg",
+                backgroundImage: "http://img.abercrombie.com/is/image/anf/ANF-2024-MAYWK4-YPB-SITE-DOUBLE-MIDLINE-WOMENS-AMERICANA.png",
                 content: [
                     ProductContentDataObject(
                         target: "https://www.abercrombie.com/shop/us/mens-a-and-f-essentials",
@@ -112,7 +112,7 @@ class DataObjectsTests: XCTestCase {
             ),
             ProductDataObject(
                 title: "FASHION TOPS",
-                backgroundImage: "anf-US-20160518-app-women-tops.jpg",
+                backgroundImage: "http://img.abercrombie.com/is/image/anf/ANF-2024-MAYWK4-YPB-SITE-DOUBLE-MIDLINE-MENS.png",
                 content: nil,
                 promoMessage: nil,
                 topDescription: "SUMMER-READY",
@@ -120,7 +120,7 @@ class DataObjectsTests: XCTestCase {
             ),
             ProductDataObject(
                 title: "ALL SHORTS $29",
-                backgroundImage: "anf-US-20160505-app-w-shorts.jpg",
+                backgroundImage: "http://img.abercrombie.com/is/image/anf/KIC_149-4069-0034-278_model6.jpg?policy=product-medium",
                 content: [
                     ProductContentDataObject(
                         target: "https://www.abercrombie.com/shop/us/womens-shorts-bottoms",
@@ -134,7 +134,7 @@ class DataObjectsTests: XCTestCase {
             ),
             ProductDataObject(
                 title: "ALL SHORTS $29",
-                backgroundImage: "anf-US-20160519-app-m-shorts.jpg",
+                backgroundImage: "http://img.abercrombie.com/is/image/anf/KIC_128-4007-0070-412_prod1.jpg?policy=product-medium",
                 content: [
                     ProductContentDataObject(
                         target: "https://www.abercrombie.com/shop/us/mens-shorts-bottoms",
@@ -148,7 +148,7 @@ class DataObjectsTests: XCTestCase {
             ),
             ProductDataObject(
                 title: "TEES & HENLEYS",
-                backgroundImage: "anf-US-20160518-app-men-tees.jpg",
+                backgroundImage: "http://img.abercrombie.com/is/image/anf/KIC_125-4003-0054-100_model1?policy=product-medium",
                 content: [
                     ProductContentDataObject(
                         target: "https://www.abercrombie.com/shop/us/mens-tees-and-henleys-tops",
@@ -162,7 +162,7 @@ class DataObjectsTests: XCTestCase {
             ),
             ProductDataObject(
                 title: "ALL JEANS BUY ONE GET ONE 50% OFF",
-                backgroundImage: "anf-US-20160415-app-women-jeans.jpg",
+                backgroundImage: "http://img.abercrombie.com/is/image/anf/KIC_155-4713-00030-278_model6.jpg?policy=product-medium",
                 content: [
                     ProductContentDataObject(
                         target: "https://www.abercrombie.com/shop/us/womens-jeans-bottoms",
