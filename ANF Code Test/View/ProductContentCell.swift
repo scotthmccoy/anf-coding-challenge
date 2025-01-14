@@ -18,3 +18,5 @@ struct ProductContentCell: View {
         Text("productContent: \(productContent)")
     }
 }
+
+

@@ -54,5 +54,15 @@
 		<string>UIInterfaceOrientationPortrait</string>
 		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Garamond.ttf</string>
+		<string>NHaasGroteskDSPro-65Md.ttf</string>
+		<string>NHaasGroteskDSPro-95Blk.ttf</string>
+		<string>TradeGothicLTPro-Bd2.ttf</string>
+		<string>TradeGothicLTPro.ttf</string>
+		<string>TradeGothicLTStd-Extended-Bold.ttf</string>
+		<string>TradeGothicLTStd-Extended.ttf</string>
+	</array>
 </dict>
 </plist>

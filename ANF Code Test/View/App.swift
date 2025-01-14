@@ -14,6 +14,9 @@ struct ANFCodeTestApp: App {
     
     init() {
         AppLog("Launching...")
+        
+        AppLog("Fonts: \(CustomFont.likelyCustomFontNames())")
+        
         #if DEBUG
         
         let args = extractArgs()

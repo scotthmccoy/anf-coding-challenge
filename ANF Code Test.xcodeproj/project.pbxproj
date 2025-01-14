@@ -27,6 +27,15 @@
 		5747A6DF2D35CECA00CE57B8 /* ProductContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5747A6DE2D35CECA00CE57B8 /* ProductContentCell.swift */; };
 		5747A6E72D35D60900CE57B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5747A6E62D35D60900CE57B8 /* LaunchScreen.storyboard */; };
 		5747A6E82D35D60900CE57B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5747A6E62D35D60900CE57B8 /* LaunchScreen.storyboard */; };
+		5747A6EB2D35D7D700CE57B8 /* Garamond.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5747A6EA2D35D7D700CE57B8 /* Garamond.ttf */; };
+		5747A6F22D35E70B00CE57B8 /* TradeGothicLTPro-Bd2.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5747A6EE2D35E70B00CE57B8 /* TradeGothicLTPro-Bd2.ttf */; };
+		5747A6F32D35E70B00CE57B8 /* TradeGothicLTStd-Extended-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5747A6F12D35E70B00CE57B8 /* TradeGothicLTStd-Extended-Bold.ttf */; };
+		5747A6F42D35E70B00CE57B8 /* NHaasGroteskDSPro-95Blk.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5747A6ED2D35E70B00CE57B8 /* NHaasGroteskDSPro-95Blk.ttf */; };
+		5747A6F52D35E70B00CE57B8 /* TradeGothicLTPro.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5747A6EF2D35E70B00CE57B8 /* TradeGothicLTPro.ttf */; };
+		5747A6F62D35E70B00CE57B8 /* TradeGothicLTStd-Extended.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5747A6F02D35E70B00CE57B8 /* TradeGothicLTStd-Extended.ttf */; };
+		5747A6F72D35E70B00CE57B8 /* NHaasGroteskDSPro-65Md.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5747A6EC2D35E70B00CE57B8 /* NHaasGroteskDSPro-65Md.ttf */; };
+		5747A6FA2D35EADD00CE57B8 /* CustomFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5747A6F92D35EADB00CE57B8 /* CustomFont.swift */; };
+		5747A6FC2D35F55600CE57B8 /* FontTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5747A6FB2D35F55600CE57B8 /* FontTestView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +73,15 @@
 		5747A6DC2D35C94A00CE57B8 /* CachedAsyncImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachedAsyncImage.swift; sourceTree = "<group>"; };
 		5747A6DE2D35CECA00CE57B8 /* ProductContentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductContentCell.swift; sourceTree = "<group>"; };
 		5747A6E62D35D60900CE57B8 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5747A6EA2D35D7D700CE57B8 /* Garamond.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Garamond.ttf; sourceTree = "<group>"; };
+		5747A6EC2D35E70B00CE57B8 /* NHaasGroteskDSPro-65Md.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NHaasGroteskDSPro-65Md.ttf"; sourceTree = "<group>"; };
+		5747A6ED2D35E70B00CE57B8 /* NHaasGroteskDSPro-95Blk.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NHaasGroteskDSPro-95Blk.ttf"; sourceTree = "<group>"; };
+		5747A6EE2D35E70B00CE57B8 /* TradeGothicLTPro-Bd2.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TradeGothicLTPro-Bd2.ttf"; sourceTree = "<group>"; };
+		5747A6EF2D35E70B00CE57B8 /* TradeGothicLTPro.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = TradeGothicLTPro.ttf; sourceTree = "<group>"; };
+		5747A6F02D35E70B00CE57B8 /* TradeGothicLTStd-Extended.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TradeGothicLTStd-Extended.ttf"; sourceTree = "<group>"; };
+		5747A6F12D35E70B00CE57B8 /* TradeGothicLTStd-Extended-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TradeGothicLTStd-Extended-Bold.ttf"; sourceTree = "<group>"; };
+		5747A6F92D35EADB00CE57B8 /* CustomFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFont.swift; sourceTree = "<group>"; };
+		5747A6FB2D35F55600CE57B8 /* FontTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontTestView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,7 +173,7 @@
 				5747A6BE2D359E9E00CE57B8 /* ExploreCardView.swift */,
 				5747A6D82D35C46000CE57B8 /* ExploreCardCell.swift */,
 				5747A6DE2D35CECA00CE57B8 /* ProductContentCell.swift */,
-				5747A6DC2D35C94A00CE57B8 /* CachedAsyncImage.swift */,
+				5747A6FD2D35F56900CE57B8 /* Utility */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -174,8 +192,33 @@
 				3E727EDB2672708B006C11AC /* Assets.xcassets */,
 				5747A6E62D35D60900CE57B8 /* LaunchScreen.storyboard */,
 				3E4AB9392676D86100C79456 /* exploreData.json */,
+				5747A6F82D35E75200CE57B8 /* Fonts */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		5747A6F82D35E75200CE57B8 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				5747A6EA2D35D7D700CE57B8 /* Garamond.ttf */,
+				5747A6EC2D35E70B00CE57B8 /* NHaasGroteskDSPro-65Md.ttf */,
+				5747A6ED2D35E70B00CE57B8 /* NHaasGroteskDSPro-95Blk.ttf */,
+				5747A6EF2D35E70B00CE57B8 /* TradeGothicLTPro.ttf */,
+				5747A6EE2D35E70B00CE57B8 /* TradeGothicLTPro-Bd2.ttf */,
+				5747A6F02D35E70B00CE57B8 /* TradeGothicLTStd-Extended.ttf */,
+				5747A6F12D35E70B00CE57B8 /* TradeGothicLTStd-Extended-Bold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		5747A6FD2D35F56900CE57B8 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				5747A6FB2D35F55600CE57B8 /* FontTestView.swift */,
+				5747A6DC2D35C94A00CE57B8 /* CachedAsyncImage.swift */,
+				5747A6F92D35EADB00CE57B8 /* CustomFont.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 		74E200561D1C42CBE27513FD /* Pods */ = {
@@ -279,6 +322,13 @@
 			files = (
 				5747A6E72D35D60900CE57B8 /* LaunchScreen.storyboard in Resources */,
 				3E727EDC2672708B006C11AC /* Assets.xcassets in Resources */,
+				5747A6EB2D35D7D700CE57B8 /* Garamond.ttf in Resources */,
+				5747A6F22D35E70B00CE57B8 /* TradeGothicLTPro-Bd2.ttf in Resources */,
+				5747A6F32D35E70B00CE57B8 /* TradeGothicLTStd-Extended-Bold.ttf in Resources */,
+				5747A6F42D35E70B00CE57B8 /* NHaasGroteskDSPro-95Blk.ttf in Resources */,
+				5747A6F52D35E70B00CE57B8 /* TradeGothicLTPro.ttf in Resources */,
+				5747A6F62D35E70B00CE57B8 /* TradeGothicLTStd-Extended.ttf in Resources */,
+				5747A6F72D35E70B00CE57B8 /* NHaasGroteskDSPro-65Md.ttf in Resources */,
 				3E4AB93A2676D86100C79456 /* exploreData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -345,8 +395,10 @@
 				5747A6D12D35C01200CE57B8 /* DomainStructs.swift in Sources */,
 				5747A6D72D35C38600CE57B8 /* ExploreCardViewModel.swift in Sources */,
 				5747A6D92D35C46000CE57B8 /* ExploreCardCell.swift in Sources */,
+				5747A6FA2D35EADD00CE57B8 /* CustomFont.swift in Sources */,
 				5747A6C72D35A1BF00CE57B8 /* CodableHelper.swift in Sources */,
 				5747A6BF2D359E9E00CE57B8 /* ExploreCardView.swift in Sources */,
+				5747A6FC2D35F55600CE57B8 /* FontTestView.swift in Sources */,
 				5747A6C32D35A13500CE57B8 /* DataStructs.swift in Sources */,
 				5747A6CC2D35B9EF00CE57B8 /* Result.swift in Sources */,
 				5747A6DD2D35C94A00CE57B8 /* CachedAsyncImage.swift in Sources */,

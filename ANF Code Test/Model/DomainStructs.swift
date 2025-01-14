@@ -8,18 +8,17 @@
 import Foundation
 
 struct Product {
-    let title: String
     let backgroundImageUrl: URL
-    let content: [ProductContent]
-    let promoMessage: String
     let topDescription: String
+    let title: String
+    let promoMessage: String
     let bottomDescription: String
+    let productContents: [ProductContent]
 }
 extension Product: Hashable {}
 
 struct ProductContent {
-    let target: String
     let title: String
-    let elementType: String
+    let url: URL
 }
 extension ProductContent: Hashable {}

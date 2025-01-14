@@ -23,14 +23,28 @@ struct ExploreCardCell: View {
                             .resizable()
                 }
             }
-            .scaledToFit()
+            .scaledToFill()
             
             Text(product.topDescription)
-            Text(product.title)
+                .font(.custom(CustomFont.garamond.internalName, size: 13))
+                .foregroundStyle(.black)
+            
+            Text(product.title.uppercased())
+                .font(.custom(CustomFont.tradeGothicLTProBd2.internalName, size: 17))
+                .foregroundStyle(.black)
+
+            
             Text(product.promoMessage)
+                .font(.custom(CustomFont.tradeGothicLTPro.internalName, size: 17))
+                .foregroundStyle(.black)
+            
             Text(product.bottomDescription)
+                .font(.custom(CustomFont.garamond.internalName, size: 17))
+                .foregroundStyle(.gray)
+                .padding(10)
+
             VStack {
-                ForEach(product.content, id: \.self) { productContent in
+                ForEach(product.productContents, id: \.self) { productContent in
                     ProductContentCell(productContent: productContent)
                 }
             }
@@ -40,13 +54,26 @@ struct ExploreCardCell: View {
 }
 
 #Preview {
-    ExploreCardCell(product: Product(
-            title: "Title",
-            backgroundImageUrl: URL(string:  "https://img.abercrombie.com/is/image/anf/KIC_155-4713-00030-278_model6.jpg?policy=product-medium")!,
-            content: [],
-            promoMessage: "Promo Message",
-            topDescription: "Top Desc",
-            bottomDescription: "Bottom Desc"
+    ScrollView {
+        ExploreCardCell(product:
+            Product(
+                backgroundImageUrl: URL(string:  "https://img.abercrombie.com/is/image/anf/KIC_155-4713-00030-278_model6.jpg?policy=product-medium")!,
+                topDescription: "A&F ESSENTIALS",
+                title: "TOPS STARTING AT $12",
+                promoMessage: "USE CODE: 12345",
+                bottomDescription: "*In stores & online. Exclusions apply. See Details",
+                productContents: [
+                    ProductContent(
+                        title: "Shop Men",
+                        url: URL(string: "https://www.abercrombie.com/shop/us/mens-new-arrivals")!
+                    ),
+                    
+                    ProductContent(
+                        title: "Shop Women",
+                        url: URL(string: "https://www.abercrombie.com/shop/us/womens-new-arrivals")!
+                    )
+                ]
+            )
         )
-    )
+    }
 }

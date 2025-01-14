@@ -29,12 +29,12 @@ struct ProductDataObject {
         }
         
         return Product(
-            title: title,
             backgroundImageUrl: backgroundImageUrl,
-            content: content?.compactMap { $0.productContent } ?? [],
-            promoMessage: promoMessage ?? "",
             topDescription: topDescription ?? "",
-            bottomDescription: bottomDescription ?? ""
+            title: title,
+            promoMessage: promoMessage ?? "",
+            bottomDescription: bottomDescription ?? "",
+            productContents: content?.compactMap { $0.productContent } ?? []
         )
         
     }
@@ -47,6 +47,14 @@ struct ProductContentDataObject: Codable, Equatable {
     let elementType: String?
     
     var productContent: ProductContent? {
-        nil
+        
+        guard let title, let target, let url = URL(string: target) else {
+            return nil
+        }
+        
+        return ProductContent(
+            title: title,
+            url: url
+        )
     }
 }
