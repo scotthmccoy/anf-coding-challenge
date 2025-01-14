@@ -15,8 +15,28 @@ struct ProductContentCell: View {
     let productContent: ProductContent
     
     var body : some View {
-        Text("productContent: \(productContent)")
+        Button(
+            action: {
+                UIApplication.shared.open(productContent.url)
+            }, label: {
+                Text(productContent.title)
+                    .apply(textStyling: TextStyling.productContentsButton)
+                
+            }
+        )
+        .frame(maxWidth: .infinity)
+        .padding(.top, 10)
+        .padding(.bottom, 10)
+        .border(Color.anfLightGrey, width: 3)
     }
 }
 
 
+#Preview {
+    ProductContentCell(
+        productContent: ProductContent(
+            title: "Shop Men",
+            url: URL(string: "foo.com")!
+        )
+    )
+}

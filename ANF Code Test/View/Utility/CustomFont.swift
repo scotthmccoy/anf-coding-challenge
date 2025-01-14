@@ -7,17 +7,30 @@
 
 import SwiftUI
 
+// List of custom fonts added to the application
+// Exposes allFonts and likelyCustomFontNames to help find their internal names at app launch
+
 enum CustomFont: CaseIterable {
+    /// Serifed, elegant
     case garamond
+    
+    /// Sans, Callout, bold
     case nhaasGroteskDsPro65Md
+    
+    /// Sans, Callout, black (extra-bold)
     case nHaasGroteskDSPro95Blk
+    
+    /// Sans, thin
     case tradeGothicLTPro
+    
+    /// Sans, bold
     case tradeGothicLTProBd2
+    
+    /// Sans, wide
     case tradeGothicLTStdExtended
+    
+    /// Sans, wide, bold
     case tradeGothicLTStdBoldExt
-    
-    
-    //"Garamond", "NHaasGroteskDSPro-95Blk", "NHaasGroteskDSPro-65Md", "TradeGothicLTPro", "TradeGothicLTPro-Bd2", "TradeGothicLTStd-Extended", "TradeGothicLTStd-BoldExt"
     
     var internalName: String {
         switch self {
@@ -42,8 +55,6 @@ enum CustomFont: CaseIterable {
                 
             case .tradeGothicLTStdBoldExt:
                 return "TradeGothicLTStd-BoldExt"
-                
-
         }
     }
     

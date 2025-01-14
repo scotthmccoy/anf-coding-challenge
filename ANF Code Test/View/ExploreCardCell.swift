@@ -24,32 +24,35 @@ struct ExploreCardCell: View {
                 }
             }
             .scaledToFill()
+            .padding(.top, 10)
+            .background()
             
             Text(product.topDescription)
-                .font(.custom(CustomFont.garamond.internalName, size: 13))
-                .foregroundStyle(.black)
+                .apply(textStyling: .exploreCardCellTopDescription)
+                
             
             Text(product.title.uppercased())
-                .font(.custom(CustomFont.tradeGothicLTProBd2.internalName, size: 17))
-                .foregroundStyle(.black)
+                .apply(textStyling: .exploreCardCellTitle)
+                
 
             
             Text(product.promoMessage)
-                .font(.custom(CustomFont.tradeGothicLTPro.internalName, size: 17))
-                .foregroundStyle(.black)
-            
-            Text(product.bottomDescription)
-                .font(.custom(CustomFont.garamond.internalName, size: 17))
-                .foregroundStyle(.gray)
-                .padding(10)
+                .apply(textStyling:  .exploreCardCellPromoMessage)
+                
+            if product.bottomDescription != "" {
+                Text(product.bottomDescription)
+                    .apply(textStyling: .exploreCardCellBottomDescription)
+                    .padding(10)
+            }
 
             VStack {
                 ForEach(product.productContents, id: \.self) { productContent in
                     ProductContentCell(productContent: productContent)
                 }
             }
+            .padding(10)
         }
-        .background(Color("CellBackground"))
+        .background(Color.anfTan)
     }
 }
 

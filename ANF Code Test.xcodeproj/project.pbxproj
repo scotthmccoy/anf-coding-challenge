@@ -35,6 +35,8 @@
 		5747A6F72D35E70B00CE57B8 /* NHaasGroteskDSPro-65Md.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5747A6EC2D35E70B00CE57B8 /* NHaasGroteskDSPro-65Md.ttf */; };
 		5747A6FA2D35EADD00CE57B8 /* CustomFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5747A6F92D35EADB00CE57B8 /* CustomFont.swift */; };
 		5747A6FC2D35F55600CE57B8 /* FontTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5747A6FB2D35F55600CE57B8 /* FontTestView.swift */; };
+		5747A6FF2D38782E00CE57B8 /* TextStyling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5747A6FE2D38782E00CE57B8 /* TextStyling.swift */; };
+		5747A7012D38820E00CE57B8 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5747A7002D38820D00CE57B8 /* Color.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +82,8 @@
 		5747A6F12D35E70B00CE57B8 /* TradeGothicLTStd-Extended-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TradeGothicLTStd-Extended-Bold.ttf"; sourceTree = "<group>"; };
 		5747A6F92D35EADB00CE57B8 /* CustomFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFont.swift; sourceTree = "<group>"; };
 		5747A6FB2D35F55600CE57B8 /* FontTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontTestView.swift; sourceTree = "<group>"; };
+		5747A6FE2D38782E00CE57B8 /* TextStyling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextStyling.swift; sourceTree = "<group>"; };
+		5747A7002D38820D00CE57B8 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,6 +218,8 @@
 				5747A6FB2D35F55600CE57B8 /* FontTestView.swift */,
 				5747A6DC2D35C94A00CE57B8 /* CachedAsyncImage.swift */,
 				5747A6F92D35EADB00CE57B8 /* CustomFont.swift */,
+				5747A6FE2D38782E00CE57B8 /* TextStyling.swift */,
+				5747A7002D38820D00CE57B8 /* Color.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -389,12 +395,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				5747A6B02D358EAA00CE57B8 /* AppLog.swift in Sources */,
+				5747A6FF2D38782E00CE57B8 /* TextStyling.swift in Sources */,
 				5747A6D12D35C01200CE57B8 /* DomainStructs.swift in Sources */,
 				5747A6D72D35C38600CE57B8 /* ExploreCardViewModel.swift in Sources */,
 				5747A6D92D35C46000CE57B8 /* ExploreCardCell.swift in Sources */,
 				5747A6FA2D35EADD00CE57B8 /* CustomFont.swift in Sources */,
 				5747A6C72D35A1BF00CE57B8 /* CodableHelper.swift in Sources */,
 				5747A6BF2D359E9E00CE57B8 /* ExploreCardView.swift in Sources */,
+				5747A7012D38820E00CE57B8 /* Color.swift in Sources */,
 				5747A6FC2D35F55600CE57B8 /* FontTestView.swift in Sources */,
 				5747A6C32D35A13500CE57B8 /* DataStructs.swift in Sources */,
 				5747A6CC2D35B9EF00CE57B8 /* Result.swift in Sources */,
