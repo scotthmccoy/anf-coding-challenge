@@ -17,6 +17,9 @@ struct ExploreCardView: View {
                 ExploreCardCell(product: product)
             }
         }
+        .onAppear {
+            exploreCardViewModel.onAppear()
+        }
     }
 }
 

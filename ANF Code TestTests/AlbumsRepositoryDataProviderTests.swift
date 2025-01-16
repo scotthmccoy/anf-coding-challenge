@@ -11,7 +11,13 @@ import Scootys_Unit_Testing
 
 final class ProductsRepositoryDataProviderTests: XCTestCase, @unchecked Sendable {
 
-    func testLive() async {
+    var apiReturn: Result<[Product], ANFAPIError> = .success([.stub])
+    
+    override func setUp() {
+        apiReturn = .success([.stub])
+    }
+    
+    func testHappyPath() async {
         // Configure test
         let sut = ProductsRepositoryDataProvider(
             .live,
@@ -23,6 +29,22 @@ final class ProductsRepositoryDataProviderTests: XCTestCase, @unchecked Sendable
         
         // Validate
         let expected: Result<[Product], ProductsRepositoryDataProviderError> = .success([.stub])
+        XCTAssertEqual(actual, expected)
+    }
+    
+    func testError() async {
+        // Configure test
+        apiReturn = .failure(.invalidUrl)
+        let sut = ProductsRepositoryDataProvider(
+            .live,
+            anfApi: self
+        )
+        
+        // Interact with sut
+        let actual = await sut.get()
+        
+        // Validate
+        let expected: Result<[Product], ProductsRepositoryDataProviderError> = .failure(.apiError(.invalidUrl))
         XCTAssertEqual(actual, expected)
     }
     
@@ -62,15 +84,14 @@ final class ProductsRepositoryDataProviderTests: XCTestCase, @unchecked Sendable
         
         XCTAssertEqual(actual, expected)
     }
-
 }
 
 extension ProductsRepositoryDataProviderTests: ANFAPIProtocol {
     func get() async -> Result<[Product], ANFAPIError> {
-        return .success([Product.stub])
+        return apiReturn
     }
     
     func get(url: URL) async -> Result<[Product], ANFAPIError> {
-        return .success([Product.stub])
+        return apiReturn
     }
 }

@@ -24,8 +24,15 @@ class ExploreCardViewModel: ObservableObject {
         // Listen for updates from repository
         productsSubscription = productsRepository.productsPublisher.sink { newValue in
             Task { @MainActor in
+                AppLog()
                 self.products = newValue
             }
+        }
+    }
+    
+    func onAppear() {
+        Task {
+            await productsRepository.fetch()
         }
     }
 }

@@ -41,9 +41,6 @@ final class ProductsRepository: ProductsRepositoryProtocol, ObservableObject {
     ) {
         AppLog()
         self.productsRepositoryDataProvider = productsRepositoryDataProvider
-        Task {
-            await fetch()
-        }
     }
 
 
