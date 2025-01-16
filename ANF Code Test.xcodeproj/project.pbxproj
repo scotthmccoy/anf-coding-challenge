@@ -45,6 +45,9 @@
 		5747A7132D38CC9F00CE57B8 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5747A7122D38CC9F00CE57B8 /* Network.swift */; };
 		57B0AC342D39921C00DB247C /* ANF_Code_TestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B0AC332D39921C00DB247C /* ANF_Code_TestUITests.swift */; };
 		57B0AC362D39921C00DB247C /* ANF_Code_TestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B0AC352D39921C00DB247C /* ANF_Code_TestUITestsLaunchTests.swift */; };
+		57B0AC3F2D39943A00DB247C /* CodableHelperTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B0AC3E2D39943A00DB247C /* CodableHelperTest.swift */; };
+		57B0AC412D3994DD00DB247C /* Stubbable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B0AC402D3994D800DB247C /* Stubbable.swift */; };
+		5D1C393B0901D23335C88F10 /* libPods-ANF Code TestUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C9BDE2A8C8B1BFB81E34555 /* libPods-ANF Code TestUITests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +68,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		10D08FFFCFBD671E641A9ACA /* Pods-ANF Code TestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ANF Code TestUITests.release.xcconfig"; path = "Target Support Files/Pods-ANF Code TestUITests/Pods-ANF Code TestUITests.release.xcconfig"; sourceTree = "<group>"; };
 		3D3F481AC9259143B362EA4B /* Pods-ANF Code TestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ANF Code TestTests.debug.xcconfig"; path = "Target Support Files/Pods-ANF Code TestTests/Pods-ANF Code TestTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3DF6054DE12B4A861B3ACACA /* Pods-ANF Code TestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ANF Code TestTests.release.xcconfig"; path = "Target Support Files/Pods-ANF Code TestTests/Pods-ANF Code TestTests.release.xcconfig"; sourceTree = "<group>"; };
 		3E4AB9392676D86100C79456 /* exploreData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = exploreData.json; sourceTree = "<group>"; };
@@ -110,6 +114,10 @@
 		57B0AC332D39921C00DB247C /* ANF_Code_TestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ANF_Code_TestUITests.swift; sourceTree = "<group>"; };
 		57B0AC352D39921C00DB247C /* ANF_Code_TestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ANF_Code_TestUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		57B0AC3D2D3992AE00DB247C /* UITests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = UITests.xctestplan; sourceTree = "<group>"; };
+		57B0AC3E2D39943A00DB247C /* CodableHelperTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableHelperTest.swift; sourceTree = "<group>"; };
+		57B0AC402D3994D800DB247C /* Stubbable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stubbable.swift; sourceTree = "<group>"; };
+		5C9BDE2A8C8B1BFB81E34555 /* libPods-ANF Code TestUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ANF Code TestUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF8E517235E614C5EE0E494B /* Pods-ANF Code TestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ANF Code TestUITests.debug.xcconfig"; path = "Target Support Files/Pods-ANF Code TestUITests/Pods-ANF Code TestUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +140,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D1C393B0901D23335C88F10 /* libPods-ANF Code TestUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,6 +188,8 @@
 			isa = PBXGroup;
 			children = (
 				5747A6C82D35B86200CE57B8 /* DataObjectsTests.swift */,
+				57B0AC402D3994D800DB247C /* Stubbable.swift */,
+				57B0AC3E2D39943A00DB247C /* CodableHelperTest.swift */,
 				5747A6D22D35C26000CE57B8 /* DomainObjectTests.swift */,
 				3E727EEB2672708B006C11AC /* Info.plist */,
 			);
@@ -281,6 +292,8 @@
 			children = (
 				3D3F481AC9259143B362EA4B /* Pods-ANF Code TestTests.debug.xcconfig */,
 				3DF6054DE12B4A861B3ACACA /* Pods-ANF Code TestTests.release.xcconfig */,
+				EF8E517235E614C5EE0E494B /* Pods-ANF Code TestUITests.debug.xcconfig */,
+				10D08FFFCFBD671E641A9ACA /* Pods-ANF Code TestUITests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -289,6 +302,7 @@
 			isa = PBXGroup;
 			children = (
 				3F5EA32B9143F68EEEDEEC40 /* libPods-ANF Code TestTests.a */,
+				5C9BDE2A8C8B1BFB81E34555 /* libPods-ANF Code TestUITests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -337,6 +351,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 57B0AC392D39921C00DB247C /* Build configuration list for PBXNativeTarget "ANF Code TestUITests" */;
 			buildPhases = (
+				2CC2652B5EB0E52E809BEB47 /* [CP] Check Pods Manifest.lock */,
 				57B0AC2D2D39921C00DB247C /* Sources */,
 				57B0AC2E2D39921C00DB247C /* Frameworks */,
 				57B0AC2F2D39921C00DB247C /* Resources */,
@@ -347,8 +362,6 @@
 				57B0AC382D39921C00DB247C /* PBXTargetDependency */,
 			);
 			name = "ANF Code TestUITests";
-			packageProductDependencies = (
-			);
 			productName = "ANF Code TestUITests";
 			productReference = 57B0AC312D39921C00DB247C /* ANF Code TestUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -449,6 +462,28 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ANF Code TestTests/Pods-ANF Code TestTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		2CC2652B5EB0E52E809BEB47 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ANF Code TestUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		D14062BB5C2CC868BC3B65F9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -506,7 +541,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57B0AC3F2D39943A00DB247C /* CodableHelperTest.swift in Sources */,
 				5747A6C92D35B86200CE57B8 /* DataObjectsTests.swift in Sources */,
+				57B0AC412D3994DD00DB247C /* Stubbable.swift in Sources */,
 				5747A6D32D35C26000CE57B8 /* DomainObjectTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -748,6 +785,7 @@
 		};
 		57B0AC3A2D39921C00DB247C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF8E517235E614C5EE0E494B /* Pods-ANF Code TestUITests.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -772,6 +810,7 @@
 		};
 		57B0AC3B2D39921C00DB247C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10D08FFFCFBD671E641A9ACA /* Pods-ANF Code TestUITests.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
