@@ -9,7 +9,11 @@
     }
   ],
   "defaultOptions" : {
-    "codeCoverage" : false,
+    "commandLineArgumentEntries" : [
+      {
+        "argument" : "UNIT_TEST"
+      }
+    ],
     "targetForVariableExpansion" : {
       "containerPath" : "container:ANF Code Test.xcodeproj",
       "identifier" : "3E727ECE26727088006C11AC",
