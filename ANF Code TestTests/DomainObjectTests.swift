@@ -41,6 +41,8 @@ class DomainObjectsTests: XCTestCase {
         }
         
         XCTAssertEqual(products.count, 10)
+        
+        XCTAssertEqual(products.first!.productContents.count, 2)
     }
     
 }

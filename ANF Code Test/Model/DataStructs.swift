@@ -8,7 +8,7 @@
 import Foundation
 
 // Data Objects exist to be a faithful recreation of the stucture of the API's json response; they help us
-// maintain a contract with the API.
+// maintain a contract with the API at https://www.abercrombie.com/anf/nativeapp/qa/codetest/codeTest_exploreData.css
 // All fields are optional so as to be more flexible with decoding and to help respond to unexpected changes to the API's structure.
 // Data objects convert themselves to Domain Objects which are structured for consistency and ease of use to the ViewModel & View programmer.
 
@@ -22,17 +22,19 @@ struct ProductDataObject {
     
     var product: Product? {
         
-        guard let title, let backgroundImage else {
+        guard let title,
+        let backgroundImage,
+        let backgroundImageUrl = URL(string: backgroundImage) else {
             return nil
         }
         
         return Product(
-            title: title,
-            backgroundImage: backgroundImage,
-            content: content?.compactMap { $0.productContent } ?? [],
-            promoMessage: promoMessage ?? "",
+            backgroundImageUrl: backgroundImageUrl,
             topDescription: topDescription ?? "",
-            bottomDescription: bottomDescription ?? ""
+            title: title,
+            promoMessage: promoMessage ?? "",
+            bottomDescription: bottomDescription ?? "",
+            productContents: content?.compactMap { $0.productContent } ?? []
         )
         
     }
@@ -45,6 +47,14 @@ struct ProductContentDataObject: Codable, Equatable {
     let elementType: String?
     
     var productContent: ProductContent? {
-        nil
+        
+        guard let title, let target, let url = URL(string: target) else {
+            return nil
+        }
+        
+        return ProductContent(
+            title: title,
+            url: url
+        )
     }
 }
