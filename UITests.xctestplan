@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "FCA48770-3537-487E-A801-A7B3F8EF18E6",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:ANF Code Test.xcodeproj",
+        "identifier" : "57B0AC302D39921C00DB247C",
+        "name" : "ANF Code TestUITests"
+      }
+    }
+  ],
+  "version" : 1
+}

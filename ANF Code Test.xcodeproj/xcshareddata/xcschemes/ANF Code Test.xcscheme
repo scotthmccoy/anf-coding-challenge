@@ -29,8 +29,11 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <TestPlans>
          <TestPlanReference
-            reference = "container:ANF Code Test.xctestplan"
+            reference = "container:UnitTests.xctestplan"
             default = "YES">
+         </TestPlanReference>
+         <TestPlanReference
+            reference = "container:UITests.xctestplan">
          </TestPlanReference>
       </TestPlans>
       <Testables>
@@ -48,7 +51,18 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3E727EEF2672708B006C11AC"
+               BlueprintIdentifier = "57B0AC302D39921C00DB247C"
+               BuildableName = "ANF Code TestUITests.xctest"
+               BlueprintName = "ANF Code TestUITests"
+               ReferencedContainer = "container:ANF Code Test.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "57B0AC302D39921C00DB247C"
                BuildableName = "ANF Code TestUITests.xctest"
                BlueprintName = "ANF Code TestUITests"
                ReferencedContainer = "container:ANF Code Test.xcodeproj">

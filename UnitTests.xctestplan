@@ -23,13 +23,6 @@
         "identifier" : "3E727EE42672708B006C11AC",
         "name" : "ANF Code TestTests"
       }
-    },
-    {
-      "target" : {
-        "containerPath" : "container:ANF Code Test.xcodeproj",
-        "identifier" : "3E727EEF2672708B006C11AC",
-        "name" : "ANF Code TestUITests"
-      }
     }
   ],
   "version" : 1
