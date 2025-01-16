@@ -47,6 +47,9 @@
 		57B0AC362D39921C00DB247C /* ANF_Code_TestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B0AC352D39921C00DB247C /* ANF_Code_TestUITestsLaunchTests.swift */; };
 		57B0AC3F2D39943A00DB247C /* CodableHelperTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B0AC3E2D39943A00DB247C /* CodableHelperTest.swift */; };
 		57B0AC412D3994DD00DB247C /* Stubbable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B0AC402D3994D800DB247C /* Stubbable.swift */; };
+		57B0AC432D3997EB00DB247C /* NetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B0AC422D3997EB00DB247C /* NetworkTests.swift */; };
+		57B0AC452D39983F00DB247C /* Stubs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B0AC442D39983F00DB247C /* Stubs.swift */; };
+		57B0AC492D39988800DB247C /* AlbumsRepositoryDataProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B0AC482D39988800DB247C /* AlbumsRepositoryDataProviderTests.swift */; };
 		5D1C393B0901D23335C88F10 /* libPods-ANF Code TestUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C9BDE2A8C8B1BFB81E34555 /* libPods-ANF Code TestUITests.a */; };
 /* End PBXBuildFile section */
 
@@ -116,6 +119,9 @@
 		57B0AC3D2D3992AE00DB247C /* UITests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = UITests.xctestplan; sourceTree = "<group>"; };
 		57B0AC3E2D39943A00DB247C /* CodableHelperTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableHelperTest.swift; sourceTree = "<group>"; };
 		57B0AC402D3994D800DB247C /* Stubbable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stubbable.swift; sourceTree = "<group>"; };
+		57B0AC422D3997EB00DB247C /* NetworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTests.swift; sourceTree = "<group>"; };
+		57B0AC442D39983F00DB247C /* Stubs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stubs.swift; sourceTree = "<group>"; };
+		57B0AC482D39988800DB247C /* AlbumsRepositoryDataProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsRepositoryDataProviderTests.swift; sourceTree = "<group>"; };
 		5C9BDE2A8C8B1BFB81E34555 /* libPods-ANF Code TestUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ANF Code TestUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF8E517235E614C5EE0E494B /* Pods-ANF Code TestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ANF Code TestUITests.debug.xcconfig"; path = "Target Support Files/Pods-ANF Code TestUITests/Pods-ANF Code TestUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -189,8 +195,11 @@
 			children = (
 				5747A6C82D35B86200CE57B8 /* DataObjectsTests.swift */,
 				57B0AC402D3994D800DB247C /* Stubbable.swift */,
+				57B0AC442D39983F00DB247C /* Stubs.swift */,
 				57B0AC3E2D39943A00DB247C /* CodableHelperTest.swift */,
+				57B0AC482D39988800DB247C /* AlbumsRepositoryDataProviderTests.swift */,
 				5747A6D22D35C26000CE57B8 /* DomainObjectTests.swift */,
+				57B0AC422D3997EB00DB247C /* NetworkTests.swift */,
 				3E727EEB2672708B006C11AC /* Info.plist */,
 			);
 			path = "ANF Code TestTests";
@@ -543,7 +552,10 @@
 			files = (
 				57B0AC3F2D39943A00DB247C /* CodableHelperTest.swift in Sources */,
 				5747A6C92D35B86200CE57B8 /* DataObjectsTests.swift in Sources */,
+				57B0AC432D3997EB00DB247C /* NetworkTests.swift in Sources */,
+				57B0AC452D39983F00DB247C /* Stubs.swift in Sources */,
 				57B0AC412D3994DD00DB247C /* Stubbable.swift in Sources */,
+				57B0AC492D39988800DB247C /* AlbumsRepositoryDataProviderTests.swift in Sources */,
 				5747A6D32D35C26000CE57B8 /* DomainObjectTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
