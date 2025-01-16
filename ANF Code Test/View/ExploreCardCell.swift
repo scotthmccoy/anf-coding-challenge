@@ -10,6 +10,7 @@ import SwiftUI
 struct ExploreCardCell: View {
     
     let product: Product
+    @State private var bottomDescriptionAttributedString: AttributedString?
     
     var body: some View {
         VStack {
@@ -25,24 +26,23 @@ struct ExploreCardCell: View {
             }
             .scaledToFill()
             .padding(.top, 10)
-            .background()
             
             Text(product.topDescription)
                 .apply(textStyling: .exploreCardCellTopDescription)
                 
-            
             Text(product.title.uppercased())
                 .apply(textStyling: .exploreCardCellTitle)
-                
 
-            
             Text(product.promoMessage)
                 .apply(textStyling:  .exploreCardCellPromoMessage)
-                
+
             if product.bottomDescription != "" {
-                Text(product.bottomDescription)
-                    .apply(textStyling: .exploreCardCellBottomDescription)
-                    .padding(10)
+                AttributedStringTextView(
+                    html: product.bottomDescription,
+                    color: .anfLightGrey,
+                    font: .custom(CustomFont.garamond.internalName, size: 15)
+                )
+                .padding(10)
             }
 
             VStack {
@@ -64,7 +64,7 @@ struct ExploreCardCell: View {
                 topDescription: "A&F ESSENTIALS",
                 title: "TOPS STARTING AT $12",
                 promoMessage: "USE CODE: 12345",
-                bottomDescription: "*In stores & online. Exclusions apply. See Details",
+                bottomDescription: "*In stores & online. <a href=\"http://www.abercrombie.com/anf/media/legalText/viewDetailsText20160601_Shorts_US.html\">Exclusions apply. See Details</a>",
                 productContents: [
                     ProductContent(
                         title: "Shop Men",

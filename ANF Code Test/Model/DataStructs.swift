@@ -8,7 +8,7 @@
 import Foundation
 
 // Data Objects exist to be a faithful recreation of the stucture of the API's json response; they help us
-// maintain a contract with the API.
+// maintain a contract with the API at https://www.abercrombie.com/anf/nativeapp/qa/codetest/codeTest_exploreData.css
 // All fields are optional so as to be more flexible with decoding and to help respond to unexpected changes to the API's structure.
 // Data objects convert themselves to Domain Objects which are structured for consistency and ease of use to the ViewModel & View programmer.
 
