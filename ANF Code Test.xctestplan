@@ -1,0 +1,36 @@
+{
+  "configurations" : [
+    {
+      "id" : "E73A78A3-A8E6-46F1-B1FC-56C148F411DE",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : false,
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:ANF Code Test.xcodeproj",
+      "identifier" : "3E727ECE26727088006C11AC",
+      "name" : "ANF Code Test"
+    }
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:ANF Code Test.xcodeproj",
+        "identifier" : "3E727EE42672708B006C11AC",
+        "name" : "ANF Code TestTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:ANF Code Test.xcodeproj",
+        "identifier" : "3E727EEF2672708B006C11AC",
+        "name" : "ANF Code TestUITests"
+      }
+    }
+  ],
+  "version" : 1
+}

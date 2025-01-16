@@ -21,5 +21,10 @@ struct ExploreCardView: View {
 }
 
 #Preview {
-    ExploreCardView()
+    ExploreCardView(
+        exploreCardViewModel: ExploreCardViewModel(
+            productsRepository: ProductsRepository(productsRepositoryDataProvider: ProductsRepositoryDataProvider(.mainBundleTestData)
+            )
+        )
+    )
 }
