@@ -21,14 +21,15 @@ class CodableHelperTests: XCTestCase {
         let productDataObject = ProductDataObject.stub
         
         // Interact with sut - encode
-        let encodingResult = CodableHelper().encode(value: productDataObject)
+        let sut: CodableHelperProtocol = CodableHelper()
+        let encodingResult = sut.encode(value: productDataObject)
         guard case let .success(data) = encodingResult else {
             XCTFail("\(encodingResult.error!)")
             return
         }
         
         // Interact with sut - decode
-        let decodingResult = CodableHelper().decode(
+        let decodingResult = sut.decode(
             type: ProductDataObject.self,
             from: data
         )
@@ -68,5 +69,7 @@ class CodableHelperTests: XCTestCase {
         XCTAssertEqual(errorString, "typeMismatch(Swift.Dictionary<Swift.String, Any>, Swift.DecodingError.Context(codingPath: [], debugDescription: \"Expected to decode Dictionary<String, Any> but found an array instead.\", underlyingError: nil))")
         XCTAssertEqual(decodedJsonString, "[\n\n]")
     }
+    
+    
     
 }
