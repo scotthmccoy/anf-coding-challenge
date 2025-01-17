@@ -6,38 +6,49 @@
 //
 
 import XCTest
+import Scootys_UI_Testing
 
-final class ANF_Code_TestUITests: XCTestCase {
-
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-
-        // In UI tests it is usually best to stop immediately when a failure occurs.
+final class AppLoadTest: XCTestCase {
+    
+    func test() {
         continueAfterFailure = false
-
-        // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
-    }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    @MainActor
-    func testExample() throws {
-        // UI tests must launch the application that they test.
+        
         let app = XCUIApplication()
         app.launch()
-
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        
+        let safari = XCUIApplication(bundleIdentifier: "com.apple.mobilesafari")
+        
+        app.staticTexts["A&F ESSENTIALS"].assertExists()
+        
+        app.buttons.tap(label: "Shop Men")
+        safari.assertHittable()
+        app.activate()
+        
+        app.buttons.tap(label: "Shop Women")
+        safari.assertHittable()
+        app.activate()
     }
-
-    @MainActor
-    func testLaunchPerformance() throws {
-        if #available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 7.0, *) {
-            // This measures how long it takes to launch your application.
-            measure(metrics: [XCTApplicationLaunchMetric()]) {
-                XCUIApplication().launch()
+}
+ 
+final class AppFailToLoadTest: XCTestCase {
+    func test() {
+        let app = XCUIApplication()
+        app.launchArguments = ["OVERRIDE_API_URL=BAD.COM"]
+        app.launch()
+        
+        app.staticTexts["A&F ESSENTIALS"].assertNotExists()
+        
+        WaitFor.tryThrows {
+            guard app.debugDescriptionProxies.contains(where: {
+                $0.label?.contains("unsupported URL") ?? false
+            }) else {
+                throw TestingError("Error message not found")
             }
         }
+        
+        app.scrollViews.firstMatch.pullToRefresh()
+        
+        app.staticTexts["A&F ESSENTIALS"].assertNotExists()
+
     }
 }

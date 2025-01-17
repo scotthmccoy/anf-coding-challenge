@@ -22,6 +22,8 @@ final class ANFAPI: ANFAPIProtocol {
 
     static let singleton = ANFAPI()
     
+    @MainActor var apiUrlString = "https://www.abercrombie.com/anf/nativeapp/qa/codetest/codeTest_exploreData.css"
+    
     private let network: NetworkProtocol
     private let codableHelper: CodableHelperProtocol
     
@@ -35,13 +37,13 @@ final class ANFAPI: ANFAPIProtocol {
     
     func get() async -> Result<[Product], ANFAPIError> {
         
-        guard let url = URL(string: "https://www.abercrombie.com/anf/nativeapp/qa/codetest/codeTest_exploreData.css") else {
+        guard let url = await URL(string: apiUrlString) else {
             return .failure(.invalidUrl)
         }
         
         let urlRequest = URLRequest(url: url)
         
-        // Use private method to get albums
+        // Use private method to get products
         return await get(urlRequest: urlRequest)
     }
     

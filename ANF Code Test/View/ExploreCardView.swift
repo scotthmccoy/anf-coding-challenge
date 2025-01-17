@@ -13,9 +13,16 @@ struct ExploreCardView: View {
     
     var body : some View {
         ScrollView {
-            ForEach(exploreCardViewModel.products, id: \.self) { product in
-                ExploreCardCell(product: product)
+            if let errorMessage = exploreCardViewModel.errorMessage {
+                Text("Error: \(errorMessage)")
+            } else {
+                ForEach(exploreCardViewModel.products, id: \.self) { product in
+                    ExploreCardCell(product: product)
+                }
             }
+        }
+        .refreshable {
+            exploreCardViewModel.refresh()
         }
         .onAppear {
             exploreCardViewModel.onAppear()

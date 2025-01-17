@@ -8,7 +8,7 @@
 import Foundation
 
 // ProductsRepository is the source of truth for the rest of the application and interface to the model layer for ViewModels.
-// It is observable, provides Domain objects (Albums).
+// It is observable, provides Domain objects (Products).
 
 @MainActor
 protocol ProductsRepositoryProtocol {

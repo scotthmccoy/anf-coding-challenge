@@ -12,8 +12,7 @@ import XCTest
 @testable import ANF_Code_Test
 
 class ExploreCardViewModelTests: XCTestCase, @unchecked Sendable {
-    
-    
+
     // These vars are for ProductsRepositoryProtocol
     @Published var products = [Product]()
     @Published var errorMessage: String?

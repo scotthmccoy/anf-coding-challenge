@@ -28,7 +28,7 @@ struct ANFCodeTestApp: App {
         
         // Override the API URL (used in UI Testing to set up different testing scenarios)
         if let overrideApiUrl = args["OVERRIDE_API_URL"] {
-            print(overrideApiUrl)
+            ANFAPI.singleton.apiUrlString = overrideApiUrl
         }
 
         #endif
