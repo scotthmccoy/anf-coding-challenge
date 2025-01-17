@@ -387,8 +387,9 @@
 		3E727EC726727088006C11AC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1620;
-				LastUpgradeCheck = 1250;
+				LastUpgradeCheck = 1620;
 				TargetAttributes = {
 					3E727ECE26727088006C11AC = {
 						CreatedOnToolsVersion = 12.5;
@@ -759,7 +760,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3D3F481AC9259143B362EA4B /* Pods-ANF Code TestTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
@@ -783,7 +783,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3DF6054DE12B4A861B3ACACA /* Pods-ANF Code TestTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
