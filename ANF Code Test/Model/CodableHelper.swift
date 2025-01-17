@@ -9,6 +9,10 @@ import Foundation
 
 // Stubbable Wrapper for JSONEncoder/JSONDecoder
 protocol CodableHelperProtocol: Sendable {
+    func encode <T: Encodable>(
+        value: T
+    ) -> Result<Data, CodableHelperError>
+    
     func decode<T: Decodable>(
         type: T.Type,
         from data: Data,

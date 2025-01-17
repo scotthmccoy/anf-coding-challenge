@@ -27,8 +27,7 @@ extension AttributedString {
             )
             
             // Convert to SwiftUI AttributedString
-            var attributedString = AttributedString(nsAttrString)
-            self = attributedString
+            self = AttributedString(nsAttrString)
         } catch {
             self = AttributedString("Error parsing HTML: \(error)")
         }

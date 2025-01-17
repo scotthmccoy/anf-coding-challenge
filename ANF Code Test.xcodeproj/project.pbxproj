@@ -39,6 +39,21 @@
 		5747A7012D38820E00CE57B8 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5747A7002D38820D00CE57B8 /* Color.swift */; };
 		5747A7052D38A2C200CE57B8 /* AttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5747A7042D38A2BE00CE57B8 /* AttributedString.swift */; };
 		5747A7092D38BB8000CE57B8 /* AttributedStringTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5747A7082D38BB7900CE57B8 /* AttributedStringTextView.swift */; };
+		5747A70D2D38C24900CE57B8 /* ProductsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5747A70C2D38C24900CE57B8 /* ProductsRepository.swift */; };
+		5747A70F2D38C30200CE57B8 /* ProductsRepositoryDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5747A70E2D38C30200CE57B8 /* ProductsRepositoryDataProvider.swift */; };
+		5747A7112D38CA9600CE57B8 /* ANFAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5747A7102D38CA9600CE57B8 /* ANFAPI.swift */; };
+		5747A7132D38CC9F00CE57B8 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5747A7122D38CC9F00CE57B8 /* Network.swift */; };
+		57B0AC342D39921C00DB247C /* ANF_Code_TestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B0AC332D39921C00DB247C /* ANF_Code_TestUITests.swift */; };
+		57B0AC3F2D39943A00DB247C /* CodableHelperTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B0AC3E2D39943A00DB247C /* CodableHelperTest.swift */; };
+		57B0AC412D3994DD00DB247C /* Stubbable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B0AC402D3994D800DB247C /* Stubbable.swift */; };
+		57B0AC432D3997EB00DB247C /* NetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B0AC422D3997EB00DB247C /* NetworkTests.swift */; };
+		57B0AC452D39983F00DB247C /* Stubs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B0AC442D39983F00DB247C /* Stubs.swift */; };
+		57B0AC492D39988800DB247C /* ProductsRepositoryDataProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B0AC482D39988800DB247C /* ProductsRepositoryDataProviderTests.swift */; };
+		57B0AC4B2D39B84C00DB247C /* CustomFontTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B0AC4A2D39B84800DB247C /* CustomFontTest.swift */; };
+		57B0AC4D2D39B8D500DB247C /* ExploreCardViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B0AC4C2D39B8D500DB247C /* ExploreCardViewModelTest.swift */; };
+		57B0AC4F2D39DB3300DB247C /* XCUIElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B0AC4E2D39DB3300DB247C /* XCUIElement.swift */; };
+		57B0AC512D3AEB6600DB247C /* ProductsRepositoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B0AC502D3AEB6600DB247C /* ProductsRepositoryTest.swift */; };
+		5D1C393B0901D23335C88F10 /* libPods-ANF Code TestUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C9BDE2A8C8B1BFB81E34555 /* libPods-ANF Code TestUITests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,9 +64,17 @@
 			remoteGlobalIDString = 3E727ECE26727088006C11AC;
 			remoteInfo = "ANF Code Test";
 		};
+		57B0AC372D39921C00DB247C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3E727EC726727088006C11AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3E727ECE26727088006C11AC;
+			remoteInfo = "ANF Code Test";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		10D08FFFCFBD671E641A9ACA /* Pods-ANF Code TestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ANF Code TestUITests.release.xcconfig"; path = "Target Support Files/Pods-ANF Code TestUITests/Pods-ANF Code TestUITests.release.xcconfig"; sourceTree = "<group>"; };
 		3D3F481AC9259143B362EA4B /* Pods-ANF Code TestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ANF Code TestTests.debug.xcconfig"; path = "Target Support Files/Pods-ANF Code TestTests/Pods-ANF Code TestTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3DF6054DE12B4A861B3ACACA /* Pods-ANF Code TestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ANF Code TestTests.release.xcconfig"; path = "Target Support Files/Pods-ANF Code TestTests/Pods-ANF Code TestTests.release.xcconfig"; sourceTree = "<group>"; };
 		3E4AB9392676D86100C79456 /* exploreData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = exploreData.json; sourceTree = "<group>"; };
@@ -88,6 +111,25 @@
 		5747A7002D38820D00CE57B8 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		5747A7042D38A2BE00CE57B8 /* AttributedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributedString.swift; sourceTree = "<group>"; };
 		5747A7082D38BB7900CE57B8 /* AttributedStringTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributedStringTextView.swift; sourceTree = "<group>"; };
+		5747A70C2D38C24900CE57B8 /* ProductsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsRepository.swift; sourceTree = "<group>"; };
+		5747A70E2D38C30200CE57B8 /* ProductsRepositoryDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsRepositoryDataProvider.swift; sourceTree = "<group>"; };
+		5747A7102D38CA9600CE57B8 /* ANFAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ANFAPI.swift; sourceTree = "<group>"; };
+		5747A7122D38CC9F00CE57B8 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		5747A7142D38D2C300CE57B8 /* UnitTests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = UnitTests.xctestplan; sourceTree = "<group>"; };
+		57B0AC312D39921C00DB247C /* ANF Code TestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ANF Code TestUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		57B0AC332D39921C00DB247C /* ANF_Code_TestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ANF_Code_TestUITests.swift; sourceTree = "<group>"; };
+		57B0AC3D2D3992AE00DB247C /* UITests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = UITests.xctestplan; sourceTree = "<group>"; };
+		57B0AC3E2D39943A00DB247C /* CodableHelperTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableHelperTest.swift; sourceTree = "<group>"; };
+		57B0AC402D3994D800DB247C /* Stubbable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stubbable.swift; sourceTree = "<group>"; };
+		57B0AC422D3997EB00DB247C /* NetworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTests.swift; sourceTree = "<group>"; };
+		57B0AC442D39983F00DB247C /* Stubs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stubs.swift; sourceTree = "<group>"; };
+		57B0AC482D39988800DB247C /* ProductsRepositoryDataProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsRepositoryDataProviderTests.swift; sourceTree = "<group>"; };
+		57B0AC4A2D39B84800DB247C /* CustomFontTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFontTest.swift; sourceTree = "<group>"; };
+		57B0AC4C2D39B8D500DB247C /* ExploreCardViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreCardViewModelTest.swift; sourceTree = "<group>"; };
+		57B0AC4E2D39DB3300DB247C /* XCUIElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCUIElement.swift; sourceTree = "<group>"; };
+		57B0AC502D3AEB6600DB247C /* ProductsRepositoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsRepositoryTest.swift; sourceTree = "<group>"; };
+		5C9BDE2A8C8B1BFB81E34555 /* libPods-ANF Code TestUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ANF Code TestUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF8E517235E614C5EE0E494B /* Pods-ANF Code TestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ANF Code TestUITests.debug.xcconfig"; path = "Target Support Files/Pods-ANF Code TestUITests/Pods-ANF Code TestUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,14 +148,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		57B0AC2E2D39921C00DB247C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D1C393B0901D23335C88F10 /* libPods-ANF Code TestUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		3E727EC626727088006C11AC = {
 			isa = PBXGroup;
 			children = (
+				5747A7142D38D2C300CE57B8 /* UnitTests.xctestplan */,
+				57B0AC3D2D3992AE00DB247C /* UITests.xctestplan */,
 				3E727ED126727088006C11AC /* ANF Code Test */,
 				3E727EE82672708B006C11AC /* ANF Code TestTests */,
+				57B0AC3C2D39925C00DB247C /* ANF Code TestUITests */,
 				3E727ED026727088006C11AC /* Products */,
 				74E200561D1C42CBE27513FD /* Pods */,
 				AD9480839549F291F8136DA1 /* Frameworks */,
@@ -125,6 +178,7 @@
 			children = (
 				3E727ECF26727088006C11AC /* ANF Code Test.app */,
 				3E727EE52672708B006C11AC /* ANF Code TestTests.xctest */,
+				57B0AC312D39921C00DB247C /* ANF Code TestUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -146,7 +200,15 @@
 			isa = PBXGroup;
 			children = (
 				5747A6C82D35B86200CE57B8 /* DataObjectsTests.swift */,
+				57B0AC402D3994D800DB247C /* Stubbable.swift */,
+				57B0AC442D39983F00DB247C /* Stubs.swift */,
+				57B0AC3E2D39943A00DB247C /* CodableHelperTest.swift */,
+				57B0AC482D39988800DB247C /* ProductsRepositoryDataProviderTests.swift */,
+				57B0AC502D3AEB6600DB247C /* ProductsRepositoryTest.swift */,
 				5747A6D22D35C26000CE57B8 /* DomainObjectTests.swift */,
+				57B0AC422D3997EB00DB247C /* NetworkTests.swift */,
+				57B0AC4A2D39B84800DB247C /* CustomFontTest.swift */,
+				57B0AC4C2D39B8D500DB247C /* ExploreCardViewModelTest.swift */,
 				3E727EEB2672708B006C11AC /* Info.plist */,
 			);
 			path = "ANF Code TestTests";
@@ -158,6 +220,10 @@
 				5747A6C22D35A13500CE57B8 /* DataStructs.swift */,
 				5747A6D02D35C01200CE57B8 /* DomainStructs.swift */,
 				5747A6C62D35A1BF00CE57B8 /* CodableHelper.swift */,
+				5747A70C2D38C24900CE57B8 /* ProductsRepository.swift */,
+				5747A70E2D38C30200CE57B8 /* ProductsRepositoryDataProvider.swift */,
+				5747A7102D38CA9600CE57B8 /* ANFAPI.swift */,
+				5747A7122D38CC9F00CE57B8 /* Network.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -230,11 +296,22 @@
 			path = Utility;
 			sourceTree = "<group>";
 		};
+		57B0AC3C2D39925C00DB247C /* ANF Code TestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				57B0AC332D39921C00DB247C /* ANF_Code_TestUITests.swift */,
+				57B0AC4E2D39DB3300DB247C /* XCUIElement.swift */,
+			);
+			path = "ANF Code TestUITests";
+			sourceTree = "<group>";
+		};
 		74E200561D1C42CBE27513FD /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				3D3F481AC9259143B362EA4B /* Pods-ANF Code TestTests.debug.xcconfig */,
 				3DF6054DE12B4A861B3ACACA /* Pods-ANF Code TestTests.release.xcconfig */,
+				EF8E517235E614C5EE0E494B /* Pods-ANF Code TestUITests.debug.xcconfig */,
+				10D08FFFCFBD671E641A9ACA /* Pods-ANF Code TestUITests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -243,6 +320,7 @@
 			isa = PBXGroup;
 			children = (
 				3F5EA32B9143F68EEEDEEC40 /* libPods-ANF Code TestTests.a */,
+				5C9BDE2A8C8B1BFB81E34555 /* libPods-ANF Code TestUITests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -287,20 +365,44 @@
 			productReference = 3E727EE52672708B006C11AC /* ANF Code TestTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		57B0AC302D39921C00DB247C /* ANF Code TestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57B0AC392D39921C00DB247C /* Build configuration list for PBXNativeTarget "ANF Code TestUITests" */;
+			buildPhases = (
+				2CC2652B5EB0E52E809BEB47 /* [CP] Check Pods Manifest.lock */,
+				57B0AC2D2D39921C00DB247C /* Sources */,
+				57B0AC2E2D39921C00DB247C /* Frameworks */,
+				57B0AC2F2D39921C00DB247C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				57B0AC382D39921C00DB247C /* PBXTargetDependency */,
+			);
+			name = "ANF Code TestUITests";
+			productName = "ANF Code TestUITests";
+			productReference = 57B0AC312D39921C00DB247C /* ANF Code TestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		3E727EC726727088006C11AC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1250;
-				LastUpgradeCheck = 1250;
+				BuildIndependentTargetsInParallel = YES;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
 				TargetAttributes = {
 					3E727ECE26727088006C11AC = {
 						CreatedOnToolsVersion = 12.5;
 					};
 					3E727EE42672708B006C11AC = {
 						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 3E727ECE26727088006C11AC;
+					};
+					57B0AC302D39921C00DB247C = {
+						CreatedOnToolsVersion = 16.2;
 						TestTargetID = 3E727ECE26727088006C11AC;
 					};
 				};
@@ -320,6 +422,7 @@
 			targets = (
 				3E727ECE26727088006C11AC /* ANF Code Test */,
 				3E727EE42672708B006C11AC /* ANF Code TestTests */,
+				57B0AC302D39921C00DB247C /* ANF Code TestUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -351,6 +454,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		57B0AC2F2D39921C00DB247C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -369,6 +479,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ANF Code TestTests/Pods-ANF Code TestTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2CC2652B5EB0E52E809BEB47 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ANF Code TestUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D14062BB5C2CC868BC3B65F9 /* [CP] Check Pods Manifest.lock */ = {
@@ -402,13 +534,16 @@
 			files = (
 				5747A6B02D358EAA00CE57B8 /* AppLog.swift in Sources */,
 				5747A6FF2D38782E00CE57B8 /* TextStyling.swift in Sources */,
+				5747A7112D38CA9600CE57B8 /* ANFAPI.swift in Sources */,
 				5747A6D12D35C01200CE57B8 /* DomainStructs.swift in Sources */,
 				5747A6D72D35C38600CE57B8 /* ExploreCardViewModel.swift in Sources */,
+				5747A7132D38CC9F00CE57B8 /* Network.swift in Sources */,
 				5747A6D92D35C46000CE57B8 /* ExploreCardCell.swift in Sources */,
 				5747A6FA2D35EADD00CE57B8 /* CustomFont.swift in Sources */,
 				5747A7052D38A2C200CE57B8 /* AttributedString.swift in Sources */,
 				5747A7092D38BB8000CE57B8 /* AttributedStringTextView.swift in Sources */,
 				5747A6C72D35A1BF00CE57B8 /* CodableHelper.swift in Sources */,
+				5747A70D2D38C24900CE57B8 /* ProductsRepository.swift in Sources */,
 				5747A6BF2D359E9E00CE57B8 /* ExploreCardView.swift in Sources */,
 				5747A7012D38820E00CE57B8 /* Color.swift in Sources */,
 				5747A6FC2D35F55600CE57B8 /* FontTestView.swift in Sources */,
@@ -417,6 +552,7 @@
 				5747A6DD2D35C94A00CE57B8 /* CachedAsyncImage.swift in Sources */,
 				5747A6DF2D35CECA00CE57B8 /* ProductContentCell.swift in Sources */,
 				5747A6C02D359E9E00CE57B8 /* App.swift in Sources */,
+				5747A70F2D38C30200CE57B8 /* ProductsRepositoryDataProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,8 +560,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57B0AC3F2D39943A00DB247C /* CodableHelperTest.swift in Sources */,
+				57B0AC4B2D39B84C00DB247C /* CustomFontTest.swift in Sources */,
 				5747A6C92D35B86200CE57B8 /* DataObjectsTests.swift in Sources */,
+				57B0AC512D3AEB6600DB247C /* ProductsRepositoryTest.swift in Sources */,
+				57B0AC4D2D39B8D500DB247C /* ExploreCardViewModelTest.swift in Sources */,
+				57B0AC432D3997EB00DB247C /* NetworkTests.swift in Sources */,
+				57B0AC452D39983F00DB247C /* Stubs.swift in Sources */,
+				57B0AC412D3994DD00DB247C /* Stubbable.swift in Sources */,
+				57B0AC492D39988800DB247C /* ProductsRepositoryDataProviderTests.swift in Sources */,
 				5747A6D32D35C26000CE57B8 /* DomainObjectTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57B0AC2D2D39921C00DB247C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57B0AC342D39921C00DB247C /* ANF_Code_TestUITests.swift in Sources */,
+				57B0AC4F2D39DB3300DB247C /* XCUIElement.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,6 +589,11 @@
 			isa = PBXTargetDependency;
 			target = 3E727ECE26727088006C11AC /* ANF Code Test */;
 			targetProxy = 3E727EE62672708B006C11AC /* PBXContainerItemProxy */;
+		};
+		57B0AC382D39921C00DB247C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3E727ECE26727088006C11AC /* ANF Code Test */;
+			targetProxy = 57B0AC372D39921C00DB247C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -606,7 +764,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3D3F481AC9259143B362EA4B /* Pods-ANF Code TestTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
@@ -630,7 +787,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3DF6054DE12B4A861B3ACACA /* Pods-ANF Code TestTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
@@ -647,6 +803,55 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ANF Code Test.app/ANF Code Test";
+			};
+			name = Release;
+		};
+		57B0AC3A2D39921C00DB247C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF8E517235E614C5EE0E494B /* Pods-ANF Code TestUITests.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C25K9LS5G2;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vrtcal.ANF-Code-TestUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "ANF Code Test";
+			};
+			name = Debug;
+		};
+		57B0AC3B2D39921C00DB247C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10D08FFFCFBD671E641A9ACA /* Pods-ANF Code TestUITests.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C25K9LS5G2;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vrtcal.ANF-Code-TestUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "ANF Code Test";
 			};
 			name = Release;
 		};
@@ -676,6 +881,15 @@
 			buildConfigurations = (
 				3E727EFD2672708B006C11AC /* Debug */,
 				3E727EFE2672708B006C11AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		57B0AC392D39921C00DB247C /* Build configuration list for PBXNativeTarget "ANF Code TestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57B0AC3A2D39921C00DB247C /* Debug */,
+				57B0AC3B2D39921C00DB247C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
