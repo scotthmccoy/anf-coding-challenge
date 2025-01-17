@@ -52,6 +52,7 @@
 		57B0AC4B2D39B84C00DB247C /* CustomFontTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B0AC4A2D39B84800DB247C /* CustomFontTest.swift */; };
 		57B0AC4D2D39B8D500DB247C /* ExploreCardViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B0AC4C2D39B8D500DB247C /* ExploreCardViewModelTest.swift */; };
 		57B0AC4F2D39DB3300DB247C /* XCUIElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B0AC4E2D39DB3300DB247C /* XCUIElement.swift */; };
+		57B0AC512D3AEB6600DB247C /* ProductsRepositoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B0AC502D3AEB6600DB247C /* ProductsRepositoryTest.swift */; };
 		5D1C393B0901D23335C88F10 /* libPods-ANF Code TestUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C9BDE2A8C8B1BFB81E34555 /* libPods-ANF Code TestUITests.a */; };
 /* End PBXBuildFile section */
 
@@ -126,6 +127,7 @@
 		57B0AC4A2D39B84800DB247C /* CustomFontTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFontTest.swift; sourceTree = "<group>"; };
 		57B0AC4C2D39B8D500DB247C /* ExploreCardViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreCardViewModelTest.swift; sourceTree = "<group>"; };
 		57B0AC4E2D39DB3300DB247C /* XCUIElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCUIElement.swift; sourceTree = "<group>"; };
+		57B0AC502D3AEB6600DB247C /* ProductsRepositoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsRepositoryTest.swift; sourceTree = "<group>"; };
 		5C9BDE2A8C8B1BFB81E34555 /* libPods-ANF Code TestUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ANF Code TestUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF8E517235E614C5EE0E494B /* Pods-ANF Code TestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ANF Code TestUITests.debug.xcconfig"; path = "Target Support Files/Pods-ANF Code TestUITests/Pods-ANF Code TestUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -202,6 +204,7 @@
 				57B0AC442D39983F00DB247C /* Stubs.swift */,
 				57B0AC3E2D39943A00DB247C /* CodableHelperTest.swift */,
 				57B0AC482D39988800DB247C /* ProductsRepositoryDataProviderTests.swift */,
+				57B0AC502D3AEB6600DB247C /* ProductsRepositoryTest.swift */,
 				5747A6D22D35C26000CE57B8 /* DomainObjectTests.swift */,
 				57B0AC422D3997EB00DB247C /* NetworkTests.swift */,
 				57B0AC4A2D39B84800DB247C /* CustomFontTest.swift */,
@@ -560,6 +563,7 @@
 				57B0AC3F2D39943A00DB247C /* CodableHelperTest.swift in Sources */,
 				57B0AC4B2D39B84C00DB247C /* CustomFontTest.swift in Sources */,
 				5747A6C92D35B86200CE57B8 /* DataObjectsTests.swift in Sources */,
+				57B0AC512D3AEB6600DB247C /* ProductsRepositoryTest.swift in Sources */,
 				57B0AC4D2D39B8D500DB247C /* ExploreCardViewModelTest.swift in Sources */,
 				57B0AC432D3997EB00DB247C /* NetworkTests.swift in Sources */,
 				57B0AC452D39983F00DB247C /* Stubs.swift in Sources */,

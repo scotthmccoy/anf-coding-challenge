@@ -42,7 +42,18 @@ class ExploreCardViewModelTests: XCTestCase, @unchecked Sendable {
         
         // Validate change in products
         XCTAssertEqual(sut.products, [.stub])
+        
+        
+        // Test Other UI events
+        expectationFetch = self.expectation(description: "expectationFetch")
+        sut.btnTryAgainTapped()
+        await fulfillment(of: [expectationFetch!])
+        
+        expectationFetch = self.expectation(description: "expectationFetch")
+        sut.refresh()
+        await fulfillment(of: [expectationFetch!])
     }
+
 }
 
 

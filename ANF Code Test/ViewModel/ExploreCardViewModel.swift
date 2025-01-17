@@ -51,4 +51,11 @@ class ExploreCardViewModel: ObservableObject {
             await productsRepository.fetch()
         }
     }
+    
+    func btnTryAgainTapped() {
+        AppLog()
+        Task {
+            await productsRepository.fetch()
+        }
+    }
 }
