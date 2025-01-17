@@ -10,6 +10,7 @@ import Scootys_UI_Testing
 
 final class AppLoadTest: XCTestCase {
     
+    @MainActor
     func test() {
         continueAfterFailure = false
         
@@ -31,6 +32,8 @@ final class AppLoadTest: XCTestCase {
 }
  
 final class AppFailToLoadTest: XCTestCase {
+    
+    @MainActor
     func test() {
         let app = XCUIApplication()
         app.launchArguments = ["OVERRIDE_API_URL=BAD.COM"]
