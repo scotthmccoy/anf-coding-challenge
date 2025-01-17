@@ -9,6 +9,15 @@
     }
   ],
   "defaultOptions" : {
+    "codeCoverage" : {
+      "targets" : [
+        {
+          "containerPath" : "container:ANF Code Test.xcodeproj",
+          "identifier" : "3E727ECE26727088006C11AC",
+          "name" : "ANF Code Test"
+        }
+      ]
+    },
     "commandLineArgumentEntries" : [
       {
         "argument" : "UNIT_TEST"
